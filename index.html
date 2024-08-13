@@ -1,4 +1,4 @@
-<html><head><base href="https://refersion.com/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JorBee71 - Attribution Technology Platform</title><style>
+<!DOCTYPE html><html><head><base href="https://joybee71.com/"><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>JoyBee71 - Hentai Game Player &amp; Affiliate Marketing</title><style>
     body, html {
         margin: 0;
         padding: 0;
@@ -7,290 +7,263 @@
         color: #ffffff;
     }
     .container {
-        max-width: 1200px;
+        display: flex;
+        max-width: 1400px;
         margin: 0 auto;
         padding: 20px;
     }
     header {
+        background-color: #2a2a2a;
+        padding: 20px;
         display: flex;
         justify-content: space-between;
         align-items: center;
-        padding: 20px 0;
-        background-color: #2a2a2a;
-        border-radius: 10px;
+    }
+    .logo-container {
+        display: flex;
+        align-items: center;
     }
     .logo {
         font-size: 24px;
         font-weight: bold;
+        margin-right: 10px;
+    }
+    .logo-subtitle {
+        font-size: 14px;
+        color: #888;
+    }
+    .search-bar {
         display: flex;
         align-items: center;
+    }
+    .search-bar input {
+        padding: 8px;
+        border: none;
+        border-radius: 4px 0 0 4px;
+        width: 200px;
+    }
+    .search-bar button {
+        padding: 8px 12px;
+        background-color: #4CAF50;
+        color: white;
+        border: none;
+        border-radius: 0 4px 4px 0;
         cursor: pointer;
     }
-    .logo svg {
-        width: 40px;
-        height: 40px;
-        margin-right: 10px;
-        transition: transform 0.3s ease;
-    }
-    .logo:hover svg {
-        transform: scale(1.1);
-    }
     nav {
-        margin-right: auto;
-        margin-left: 20px;
+        margin-top: 10px;
     }
     nav ul {
         list-style-type: none;
-        display: flex;
-        margin: 0;
         padding: 0;
     }
     nav ul li {
+        display: inline;
         margin-right: 20px;
     }
     nav ul li a {
-        text-decoration: none;
         color: #ffffff;
-        font-weight: 500;
+        text-decoration: none;
     }
-    .hero {
-        text-align: center;
-        padding: 50px 0;
-    }
-    .hero h1 {
-        font-size: 2.5em;
-        margin-bottom: 10px;
-        color: #ffd700;
-    }
-    .hero h2 {
-        font-size: 1.8em;
-        margin-top: 0;
-        color: #ffd700;
-    }
-    .dashboard {
+    .column {
+        flex: 1;
+        padding: 20px;
         background-color: #2a2a2a;
+        margin: 10px;
         border-radius: 10px;
-        box-shadow: 0 0 10px rgba(255,215,0,0.1);
-        padding: 20px;
-        margin-top: 20px;
     }
-    .dashboard-header {
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        margin-bottom: 20px;
-    }
-    .menu-image {
-        width: 100%;
-        height: auto;
-        object-fit: contain;
-        border-radius: 5px;
-        margin-bottom: 20px;
-    }
-    .user-controls {
-        display: flex;
-        align-items: center;
-        gap: 10px;
-    }
-    .user-avatar {
-        width: 40px;
-        height: 40px;
-        border-radius: 50%;
-        background-color: #ffd700;
-    }
-    .dashboard-content {
-        display: grid;
-        grid-template-columns: repeat(3, 1fr);
-        gap: 20px;
-    }
-    .card {
-        background-color: #3a3a3a;
-        border-radius: 5px;
-        padding: 20px;
-        text-align: center;
+    .middle-column {
+        flex: 2;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        height: 200px;
     }
-    #logo-modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.8);
-    }
-    .modal-content {
-        background-color: #2a2a2a;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #ffd700;
-        width: 80%;
-        max-width: 500px;
-        border-radius: 10px;
-    }
-    .close {
-        color: #ffd700;
-        float: right;
-        font-size: 28px;
-        font-weight: bold;
-        cursor: pointer;
-    }
-    .close:hover {
-        color: #fff;
-    }
-    #menu-modal {
-        display: none;
-        position: fixed;
-        z-index: 1000;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        background-color: rgba(0,0,0,0.8);
-    }
-    .menu-modal-content {
-        background-color: #2a2a2a;
-        margin: 15% auto;
-        padding: 20px;
-        border: 1px solid #ffd700;
-        width: 80%;
-        max-width: 500px;
-        border-radius: 10px;
-    }
-    .menu-item {
-        padding: 10px;
-        margin: 5px 0;
+    .game-card {
         background-color: #3a3a3a;
         border-radius: 5px;
-        cursor: pointer;
-        transition: background-color 0.3s ease;
+        padding: 10px;
+        margin-bottom: 20px;
     }
-    .menu-item:hover {
-        background-color: #4a4a4a;
+    .game-card img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .game-card h3 {
+        margin: 10px 0;
+    }
+    .game-card p {
+        font-size: 14px;
+    }
+    .ad {
+        background-color: #3a3a3a;
+        border-radius: 5px;
+        padding: 10px;
+        margin-bottom: 20px;
+        text-align: center;
+    }
+    .ad img {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+    .middle-content {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+    .middle-card {
+        width: 48%;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+        transition: box-shadow 0.3s ease-in-out;
+        margin-bottom: 20px;
+    }
+    .middle-card:hover {
+        box-shadow: 0 8px 16px rgba(0, 0, 0, 0.8);
+    }
+    .horizontal-lines {
+        width: 100%;
+        height: 5px;
+        background: repeating-linear-gradient(
+            to bottom,
+            rgba(255, 255, 255, 0.1),
+            rgba(255, 255, 255, 0.1) 1px,
+            transparent 1px,
+            transparent 5px
+        );
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+    .next-page {
+        text-align: center;
+        padding: 10px;
+        background-color: #4CAF50;
+        color: white;
+        border-radius: 5px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    .next-page:hover {
+        background-color: #45a049;
     }
 </style></head><body>
+    <header>
+    <div class="logo-container">
+        <div class="logo">JoyBee71</div>
+        <div class="logo-subtitle">Hentai Game Player</div>
+    </div>
+    <div style="display: flex; align-items: center;">
+    <div class="search-bar">
+        <input type="text" placeholder="Search...">
+        <button>Search</button>
+    </div>
+    <a href="mailto:joybee71@gmail.com" style="margin-left: 20px; color: #ffffff; text-decoration: none;">DM to my email</a>
+</div>
+</header>
+    <nav>
+    <ul>
+        <!-- Removed the list item containing the email link -->
+    </ul>
+</nav>
+
     <div class="container">
-        <header>
-            <div class="logo" id="logo-trigger">
-                <svg viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg">
-                    <path d="M20 80 L40 20 L60 80 Z" fill="#ffd700"/>
-                    <circle cx="70" cy="30" r="10" fill="#ffd700"/>
-                    <path d="M65 40 Q70 50 75 40" stroke="#ffd700" stroke-width="2" fill="none"/>
-                </svg>
-                JorBee71
+        <div class="column">
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Random+Game+1" alt="Random Game 1 thumbnail">
+                <h3>Random Game 1</h3>
+                <p>A brief description of the game and its gameplay mechanics.</p>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="https://www.xideos.com" target="_blank">Platform: Xideos</a></li>
-                    <li><a href="mailto:jorbee71@gmail.com">Contact: jorbee71@gmail.com</a></li>
-                </ul>
-            </nav>
-        </header>
-        
-        <section class="hero">
-            <h1>Porn GamePlay Streamer</h1>
-            <h2>Seeking For Affiliate Marketing in Hentai, Porn product or Gaming</h2>
-        </section>
-        
-        <section class="dashboard">
-            <div class="dashboard-header">
-                <img src="https://replicate.delivery/yhqm/DUWsd7eUxwVBV6NyJ3l5E1reJCIy2NxhWEHxuoErKP4qeXjmA/out-0.webp" alt="Menu options: Dashboard, Manage, Channels, Payments, Reporting, Account" class="menu-image" id="menu-trigger">
-                <div class="user-controls">
-                    <div class="user-avatar"></div>
-                    <div class="notifications">🔔</div>
-                </div>
+            <div class="game-card">
+                <img src="https://via.placeholder.com/300x200.png?text=Random+Game+2" alt="Random Game 2 thumbnail">
+                <h3>Random Game 2</h3>
+                <p>Another interesting game with unique features and storyline.</p>
             </div>
-            <div class="dashboard-content">
-                <div class="card">
-                    <img src="Logo_JorBee71.png" />
-                </div>
-                <div class="card">
-                    <!-- Empty card -->
-                </div>
-                <div class="card">
-                    <!-- Empty card -->
-                </div>
-            </div>
-        </section>
-    </div>
-
-    <div id="logo-modal">
-        <div class="modal-content">
-            <span class="close" id="close-logo-modal">&times;</span>
-            <h2>About Our Logo</h2>
-            <p>Our logo represents the spirit of JorBee71:</p>
-            <ul>
-                <li>The triangle symbolizes strength and stability in our platform.</li>
-                <li>The circle represents our global reach and inclusive community.</li>
-                <li>The curved line shows our flexibility and adaptability in the ever-changing digital landscape.</li>
-                <li>The golden color signifies success and prosperity for our affiliates and partners.</li>
-            </ul>
-            <p>Together, these elements embody our commitment to providing a robust, user-friendly platform for porn gameplay streaming and affiliate marketing in the adult entertainment and gaming industries.</p>
         </div>
-    </div>
 
-    <div id="menu-modal">
-        <div class="menu-modal-content">
-            <span class="close" id="close-menu-modal">&times;</span>
-            <h2>Menu Options</h2>
-            <div class="menu-item">Dashboard</div>
-            <div class="menu-item">Manage</div>
-            <div class="menu-item">Channels</div>
-            <div class="menu-item">Payments</div>
-            <div class="menu-item">Reporting</div>
-            <div class="menu-item">Account</div>
+        <div class="column middle-column">
+            <div class="middle-content">
+                <!-- Game 1 -->
+                <div class="middle-card game-card" style="border: 1px solid #444; padding: 9px; box-sizing: border-box; position: relative;">
+                    <img src="https://via.placeholder.com/300x200.png?text=New+Release+1" alt="New Release Game 1 thumbnail" style="width: calc(100% - 2px); height: auto; border-radius: 4px;">
+                    <h3 style="font-size: smaller;">同人SLG 8月 13, 2024</h3>
+                    <p style="font-size: larger;">あなたの街のご奉仕○リ巨乳シスター　攻略レビュー</p>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);"></div>
+                </div>
+                <!-- Game 2 -->
+                <div class="middle-card game-card" style="border: 1px solid #444; padding: 9px; box-sizing: border-box; position: relative;">
+                    <img src="https://via.placeholder.com/300x200.png?text=New+Release+2" alt="New Release Game 2 thumbnail" style="width: calc(100% - 2px); height: auto; border-radius: 4px;">
+                    <h3 style="font-size: smaller;">同人SLG 8月 10, 2024</h3>
+                    <p style="font-size: larger;">魔法少女ハルカ　～淫魔モンスターに犯される少女～　攻略レビュー</p>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);"></div>
+                </div>
+            </div>
+            <div class="horizontal-lines"></div>
+
+            <div class="middle-content">
+                <!-- Game 3 -->
+                <div class="middle-card game-card" style="border: 1px solid #444; padding: 9px; box-sizing: border-box; position: relative;">
+                    <img src="https://via.placeholder.com/300x200.png?text=New+Release+3" alt="New Release Game 3 thumbnail" style="width: calc(100% - 2px); height: auto; border-radius: 4px;">
+                    <h3 style="font-size: smaller;">同人RPG 8月 7, 2024</h3>
+                    <p style="font-size: larger;">異世界転生勇者と魔王の娘　～エロトラップダンジョン～　攻略レビュー</p>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);"></div>
+                </div>
+                <!-- Game 4 -->
+                <div class="middle-card game-card" style="border: 1px solid #444; padding: 9px; box-sizing: border-box; position: relative;">
+                    <img src="https://via.placeholder.com/300x200.png?text=New+Release+4" alt="New Release Game 4 thumbnail" style="width: calc(100% - 2px); height: auto; border-radius: 4px;">
+                    <h3 style="font-size: smaller;">同人ADV 8月 5, 2024</h3>
+                    <p style="font-size: larger;">人妻教師の秘密　～放課後の個人指導～　攻略レビュー</p>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);"></div>
+                </div>
+            </div>
+            <div class="horizontal-lines"></div>
+
+            <div class="middle-content">
+                <!-- Game 5 -->
+                <div class="middle-card game-card" style="border: 1px solid #444; padding: 9px; box-sizing: border-box; position: relative;">
+                    <img src="https://via.placeholder.com/300x200.png?text=New+Release+5" alt="New Release Game 5 thumbnail" style="width: calc(100% - 2px); height: auto; border-radius: 4px;">
+                    <h3 style="font-size: smaller;">同人SLG 8月 2, 2024</h3>
+                    <p style="font-size: larger;">宇宙戦艦カリスト　～エイリアン娘との銀河冒険～　攻略レビュー</p>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);"></div>
+                </div>
+                <!-- Game 6 -->
+                <div class="middle-card game-card" style="border: 1px solid #444; padding: 9px; box-sizing: border-box; position: relative;">
+                    <img src="https://via.placeholder.com/300x200.png?text=New+Release+6" alt="New Release Game 6 thumbnail" style="width: calc(100% - 2px); height: auto; border-radius: 4px;">
+                    <h3 style="font-size: smaller;">同人RPG 7月 30, 2024</h3>
+                    <p style="font-size: larger;">魔法学園の裏事情　～禁断の秘密クラブ～　攻略レビュー</p>
+                    <div style="position: absolute; bottom: 0; left: 0; right: 0; height: 1px; background: linear-gradient(to right, transparent, rgba(255,255,255,0.3), transparent);"></div>
+                </div>
+            </div>
+            <div class="horizontal-lines"></div>
+
+            <!-- Next Page Button -->
+            <div class="next-page" style="display: flex; justify-content: center; align-items: center; background-color: transparent; color: white; cursor: pointer;">
+    <span style="display: flex; gap: 10px;">
+        <span style="position: relative; padding-bottom: 2px;">
+            1
+            <span style="position: absolute; bottom: 0; left: 0; right: 0; height: 2px; background-color: white;"></span>
+        </span>
+        <span>2</span>
+        <span>3</span>
+    </span>
+</div>
+        </div>
+
+        <div class="column">
+            <div class="ad">
+                <img src="https://via.placeholder.com/300x250.png?text=Hot+Deal" alt="Hot Deal advertisement">
+                <p>Get 50% off on selected adult games!</p>
+            </div>
+            <div class="ad">
+                <img src="https://via.placeholder.com/300x250.png?text=New+Arrivals" alt="New Arrivals advertisement">
+                <p>Check out our latest additions to the store!</p>
+            </div>
         </div>
     </div>
 
 <script>
-    // Logo modal functionality
-    const logoTrigger = document.getElementById('logo-trigger');
-    const logoModal = document.getElementById('logo-modal');
-    const closeLogoModal = document.getElementById('close-logo-modal');
-
-    logoTrigger.onclick = function() {
-        logoModal.style.display = "block";
-    }
-
-    closeLogoModal.onclick = function() {
-        logoModal.style.display = "none";
-    }
-
-    // Menu modal functionality
-    const menuTrigger = document.getElementById('menu-trigger');
-    const menuModal = document.getElementById('menu-modal');
-    const closeMenuModal = document.getElementById('close-menu-modal');
-
-    menuTrigger.onclick = function() {
-        menuModal.style.display = "block";
-    }
-
-    closeMenuModal.onclick = function() {
-        menuModal.style.display = "none";
-    }
-
-    // Close modals when clicking outside
-    window.onclick = function(event) {
-        if (event.target == logoModal) {
-            logoModal.style.display = "none";
-        }
-        if (event.target == menuModal) {
-            menuModal.style.display = "none";
-        }
-    }
-
-    // Menu item click functionality
-    const menuItems = document.querySelectorAll('.menu-item');
-    menuItems.forEach(item => {
-        item.addEventListener('click', function() {
-            alert(`You clicked on ${this.textContent}`);
-            menuModal.style.display = "none";
-        });
+    // You can add JavaScript here for interactive features
+    document.querySelector('.next-page').addEventListener('click', function() {
+        alert('Loading next page...');
+        // Here you would typically load more content or navigate to the next page
     });
 </script>
 </body></html>
